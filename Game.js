@@ -23,7 +23,7 @@ var story = [
     q1a: "Go near the black hole to explore for resources",
     q1b: "Leave the black hole alone and continue onward",
     explorable: false,
-    failText: "Oh no Cadet, you have gone too close to the black hole and got sucked in! "
+    failText: "Oh no Cadet, you have gone too close to the black hole and passed its event horizon!"
   },
   {
     maintext: "Cadet Rice, you see a star in its last stages of life and find yourself surrounded by supernova remnant. Do you:",
@@ -45,7 +45,7 @@ var story = [
     water: false,
     food: false,
     hydrogen: true,
-    fuelExplainer: "Nuclear fusion is plentiful here and we have found some remaining Hydrogen!"
+    fuelExplainer: "We have found some deuterium (heavy hydrogen) and lithium that can be used as fuel!"
   },
   {
     maintext: "Oh no Cadet! You’ve been hit by jets emitted from active galactic nuclei. The jets go near the speed of light and have set you back 20 lightyears.",
@@ -85,7 +85,7 @@ var story = [
     water: false,
     food: false,
     hydrogen: true,
-    fuelexplainer: "Bok globules contain dense cosmic dust and gas from which star formation can take place."
+    fuelExplainer: "Bok globules contain dense cosmic dust and gas from which star formation can take place."
   },
   {
     maintext: "Your spaceship picks up high frequencies of energy being emitted from a nearby Quasar. Do you:",
@@ -93,7 +93,7 @@ var story = [
     q1a: "Approach the Quasar in a search for resources",
     q1b: "Continue on to search for resources",
     explorable: false,
-    failText: "Oh no! This Quasar contained a black hole and you were pulled in along with many other galactic materials!"
+    failText: "Oh no! This Quasar contained a black hole and the ship was caught in the accretion disk with many other galactic materials surrounding the blackhole!"
   },
   {
     maintext: "You’re in luck Cadet! You’ve approached another habitable exoplanet. What do you choose to do?",
@@ -104,7 +104,7 @@ var story = [
     water: true,
     food: true,
     hydrogen: true,
-    fuelexplainer: " "
+    fuelExplainer: " "
   },
   {
     maintext: "After traveling 7 light years, you encounter another brown dwarf. What will you do?",
@@ -287,7 +287,7 @@ function initialize() {
   $('.choice1').text("Start Game");
   storyIndex = -1;
   water = 30;
-  food = 15;
+  food = 21;
   fuel = 50;
   updateResources();
   $('.btn1').off('click').click(navigator);
